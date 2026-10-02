@@ -1,14 +1,22 @@
-# Anshu's Portfolio
+# 🚀 Anshu's Portfolio
 
-My personal portfolio website, built to showcase my projects, skills, and education. The site includes a Spider-Man-inspired illustration, responsive layouts, and a contact form.
+Personal portfolio website built with React.js and Vite.
 
-## Built with
+## ✨ Features
 
-- React
-- Vite
-- CSS
+- Dark theme with smooth animations
+- Responsive design
+- Resume link
+- Project showcase
+- Skills and education sections
+- Contact form
+- Spider-Man-inspired hanging animation
 
-## Run locally
+## 🛠️ Tech Stack
+
+React.js - Vite - CSS3
+
+## 🚀 Quick Setup
 
 ```bash
 git clone https://github.com/anshu6646/portfolio.git
@@ -17,23 +25,19 @@ npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite, usually `http://localhost:5173`.
+## 📝 Customization
 
-To create and preview a production build:
+- Update personal information in `src/components/`
+- Replace `src/assets/pfp.jpg` with your photo
+- Update the resume link in `src/components/Hero.jsx`
+
+## 🚀 Deploy
 
 ```bash
 npm run build
-npm run preview
+# Deploy the dist folder to your hosting platform
 ```
 
-## Featured projects
+**Author:** Anshu [@anshu6646](https://github.com/anshu6646)
 
-- **CareerPrep AI** — AI-powered interview and resume preparation platform. [Live demo](https://careerprep-ai-frontend.onrender.com/) · [Source](https://github.com/anshu6646/Job_preparation_ai)
-- **Snappy** — Real-time chat application built with the MERN stack and Socket.IO. [Live demo](https://chat-app-4h6f.vercel.app/) · [Source](https://github.com/anshu6646/chat-app)
-- **Wanderlust** — Travel listing platform with reviews, image uploads, and interactive maps. [Source](https://github.com/anshu6646/wanderlust)
-
-## Contact
-
-- Email: [anshudhaker3238@gmail.com](mailto:anshudhaker3238@gmail.com)
-- LinkedIn: [Anshu Dhaker](https://www.linkedin.com/in/anshu-dhaker-15119630b)
-- GitHub: [anshu6646](https://github.com/anshu6646)
+⭐ Star if helpful!
