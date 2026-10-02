@@ -7,24 +7,24 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-info">
-            <h3>Aayansh Chaudhary</h3>
-            <p>Full Stack Developer & CS Student</p>
+            <h3>Anshu</h3>
+            <p>Full Stack Developer</p>
             <p>Indian Institute of Information Technology, Kota</p>
           </div>
           <div className="footer-links">
-            <a href="https://github.com/a-ayansh" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://github.com/anshu6646" target="_blank" rel="noopener noreferrer" className="social-link">
               GitHub
             </a>
-            <a href="https://linkedin.com/in/aayansh03" target="_blank" rel="noopener noreferrer" className="social-link">
+            <a href="https://www.linkedin.com/in/anshu-dhaker-15119630b" target="_blank" rel="noopener noreferrer" className="social-link">
               LinkedIn
             </a>
-            <a href="mailto:aayansh.chaudhary03@gmail.com" className="social-link">
+            <a href="mailto:anshudhaker3238@gmail.com" className="social-link">
               Email
             </a>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; 2024 Aayansh Chaudhary. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Anshu. All rights reserved.</p>
         </div>
       </div>
     </footer>

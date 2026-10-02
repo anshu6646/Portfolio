@@ -41,13 +41,14 @@
   margin-bottom: 1.5rem;
   padding: 1rem;
   background-color: var(--dark-card);
-  border: 2px solid var(--primary-white);
+  border: 1px solid var(--dark-border);
+  border-left: 2px solid var(--spider-blue);
   transition: all 0.3s ease;
 }
 
 .contact-item:hover {
   transform: translateY(-2px);
-  box-shadow: 3px 3px 0px var(--primary-white);
+  box-shadow: 0 8px 24px rgba(22,117,197,.16);
 }
 
 .contact-label {
@@ -73,7 +74,8 @@
 .contact-form {
   background-color: var(--dark-card);
   padding: 2.5rem;
-  border: 2px solid var(--primary-white);
+  border: 1px solid var(--dark-border);
+  border-top: 3px solid var(--spider-red);
 }
 
 .form-group {
@@ -96,8 +98,8 @@
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--primary-white);
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+  border-color: var(--spider-blue);
+  box-shadow: 0 0 0 3px rgba(22,117,197,.15);
 }
 
 .form-group input::placeholder,
@@ -108,9 +110,9 @@
 .submit-btn {
   width: 100%;
   padding: 1rem 2rem;
-  background-color: var(--primary-white);
-  color: var(--primary-black);
-  border: 2px solid var(--primary-white);
+  background-color: var(--spider-red);
+  color: white;
+  border: 2px solid var(--spider-red);
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -121,9 +123,9 @@
 
 .submit-btn:hover {
   background-color: transparent;
-  color: var(--primary-white);
+  color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(130,115,214,.24);
 }
 
 .submit-btn:active {

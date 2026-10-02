@@ -19,17 +19,21 @@
 
 .project-card {
   background-color: var(--dark-card);
-  border: 2px solid var(--primary-white);
+  border: 1px solid var(--dark-border);
+  border-top: 3px solid var(--spider-red);
   padding: 0;
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   height: 100%;
+  transform-style: preserve-3d;
+  box-shadow: 0 16px 34px rgba(0,0,0,.22);
 }
+.project-card:nth-child(even) { border-top-color: var(--spider-blue); }
 
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 10px 10px 0px var(--primary-white);
+  box-shadow: 0 20px 42px rgba(22,117,197,.18);
 }
 
 .project-content {
@@ -71,7 +75,7 @@
   background-color: var(--dark-surface);
   display: flex;
   gap: 1rem;
-  border-top: 2px solid var(--primary-white);
+  border-top: 1px solid var(--dark-border);
 }
 
 .project-link {

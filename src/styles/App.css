@@ -7,12 +7,14 @@
 :root {
   --primary-black: #000000;
   --primary-white: #ffffff;
-  --dark-bg: #000000;
-  --dark-surface: #111111;
-  --dark-card: #1a1a1a;
   --dark-text: #ffffff;
   --dark-text-secondary: #cccccc;
-  --dark-border: #333333;
+  --spider-red: #8273d6;
+  --spider-blue: #52a9bd;
+  --dark-bg: #090b10;
+  --dark-surface: #10141d;
+  --dark-card: #151b26;
+  --dark-border: #283344;
   --gray-100: #f5f5f5;
   --gray-200: #e5e5e5;
   --gray-300: #d4d4d4;
@@ -59,13 +61,13 @@ body {
   transform: translateX(-50%);
   width: 60px;
   height: 3px;
-  background-color: var(--primary-white);
+  background: linear-gradient(90deg, var(--spider-red), var(--spider-blue));
 }
 
 .btn-primary {
-  background-color: var(--primary-white);
-  color: var(--primary-black);
-  border: 2px solid var(--primary-white);
+  background-color: var(--spider-red);
+  color: white;
+  border: 2px solid var(--spider-red);
   padding: 12px 24px;
   font-size: 1rem;
   cursor: pointer;
@@ -76,14 +78,14 @@ body {
 
 .btn-primary:hover {
   background-color: transparent;
-  color: var(--primary-white);
-  border-color: var(--primary-white);
+  color: var(--spider-red);
+  border-color: var(--spider-red);
 }
 
 .btn-secondary {
   background-color: transparent;
   color: var(--primary-white);
-  border: 2px solid var(--primary-white);
+  border: 2px solid var(--spider-blue);
   padding: 12px 24px;
   font-size: 1rem;
   cursor: pointer;
@@ -93,9 +95,12 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: var(--primary-white);
-  color: var(--primary-black);
+  background-color: var(--spider-blue);
+  color: white;
 }
+
+::selection { background: var(--spider-red); color: white; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #55b9ff; outline-offset: 4px; }
 
 /* Animations */
 @keyframes fadeInUp {

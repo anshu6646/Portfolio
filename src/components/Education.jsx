@@ -9,27 +9,27 @@ const Education = () => {
       id: 1,
       degree: "Bachelor of Technology",
       years: "2023 - 2027",
-      field: "Computer Science Engineering",
+      field: "Electronics & Communication Engineering",
       institution: "Indian Institute of Information Technology, Kota",
-      grade: "CGPA: 8.14/10",
+      grade: "Currently pursuing",
       status: "ongoing"
     },
     {
       id: 2,
-      degree: "Higher Secondary",
-      years: "2023",
-      field: "Science (PCM)",
-      institution: "K.L. International School, Meerut",
-      grade: "Percentage: 92%",
+      degree: "Senior Secondary",
+      years: "2022",
+      field: "Mathematics (PCM)",
+      institution: "Sunrise Maa Bharti Sr Sec School, Bijoliya",
+      grade: "Percentage: 91.60%",
       status: "completed"
     },
     {
       id: 3,
       degree: "Secondary School",
-      years: "2021",
+      years: "2020",
       field: "All Subjects",
-      institution: "K.L. International School, Meerut",
-      grade: "Percentage: 95%",
+      institution: "Sunrise Maa Bharti Sr Sec School, Bijoliya",
+      grade: "Percentage: 94.17%",
       status: "completed"
     }
   ]

@@ -4,7 +4,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-color: var(--dark-bg);
+  background: radial-gradient(ellipse at 78% 48%, rgba(82,169,189,.12), transparent 35%), radial-gradient(ellipse at 12% 90%, rgba(130,115,214,.09), transparent 30%), var(--dark-bg);
 }
 
 .hero-container {
@@ -31,7 +31,7 @@
 }
 
 .highlight {
-  color: var(--primary-white);
+  color: var(--spider-red);
   position: relative;
 }
 
@@ -42,7 +42,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: var(--primary-white);
+  background-color: var(--spider-blue);
   animation: underlineExpand 1s ease forwards 0.5s;
   transform: scaleX(0);
   transform-origin: left;
@@ -75,7 +75,7 @@
 .btn-download {
   background-color: transparent;
   color: var(--primary-white);
-  border: 2px solid var(--primary-white);
+  border: 2px solid var(--spider-red);
   padding: 12px 24px;
   font-size: 1rem;
   cursor: pointer;
@@ -98,7 +98,7 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: var(--primary-white);
+  background: var(--spider-red);
   transition: left 0.3s ease;
   z-index: -1;
 }
@@ -108,7 +108,7 @@
 }
 
 .btn-download:hover {
-  color: var(--primary-black);
+  color: white;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
@@ -132,43 +132,35 @@
   animation: fadeInRight 1s ease forwards;
 }
 
-.geometric-shapes {
+.spider-hanger-scene {
+  min-height: 470px;
+  width: min(100%, 400px);
+  display: grid;
+  place-items: center;
   position: relative;
-  width: 400px;
-  height: 400px;
+  perspective: 800px;
 }
 
-.shape {
+.spider-hanger-scene::before {
+  content: '';
   position: absolute;
-  border: 2px solid var(--primary-white);
-  animation: float 6s ease-in-out infinite;
-}
-
-.shape-1 {
-  width: 100px;
-  height: 100px;
-  top: 50px;
-  left: 50px;
-  animation-delay: 0s;
-}
-
-.shape-2 {
-  width: 150px;
-  height: 150px;
+  inset: 18% 10%;
   border-radius: 50%;
-  top: 150px;
-  right: 50px;
-  animation-delay: 2s;
+  background: radial-gradient(ellipse, rgba(82,169,189,.13), rgba(130,115,214,.05) 48%, transparent 72%);
+  filter: blur(14px);
 }
 
-.shape-3 {
-  width: 120px;
-  height: 120px;
-  transform: rotate(45deg);
-  bottom: 50px;
-  left: 100px;
-  animation-delay: 4s;
+.spider-hanger {
+  z-index: 1;
+  width: min(350px, 86vw);
+  transform-origin: 50% 8%;
+  animation: spider-sway 4.8s ease-in-out infinite;
+  filter: drop-shadow(0 20px 20px rgba(0,0,0,.28));
 }
+
+.spider-hanger svg { display: block; width: 100%; height: auto; overflow: visible; }
+.spider-web-line { fill: none; stroke: rgba(220,235,255,.8); stroke-width: 2; stroke-dasharray: 4 5; animation: web-shimmer 2.8s linear infinite; }
+.spider-web-knot { fill: var(--spider-blue); stroke: #dcecff; stroke-width: 2; }
 
 .scroll-indicator {
   position: absolute;
@@ -181,10 +173,13 @@
 .scroll-arrow {
   width: 30px;
   height: 30px;
-  border-right: 2px solid var(--primary-white);
-  border-bottom: 2px solid var(--primary-white);
+  border-right: 2px solid var(--spider-red);
+  border-bottom: 2px solid var(--spider-red);
   transform: rotate(45deg);
 }
+
+@keyframes spider-sway { 0%,100% { transform: rotate(-3deg) translateY(0); } 50% { transform: rotate(3deg) translateY(5px); } }
+@keyframes web-shimmer { to { stroke-dashoffset: -18; } }
 
 @keyframes blink {
   0%, 50% { opacity: 1; }
@@ -220,10 +215,7 @@
     gap: 2rem;
   }
   
-  .geometric-shapes {
-    width: 300px;
-    height: 300px;
-  }
+  .spider-hanger-scene { min-height: 430px; }
 }
 
 @media (max-width: 768px) {
@@ -251,25 +243,8 @@
     justify-content: center;
   }
   
-  .geometric-shapes {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .shape-1 {
-    width: 60px;
-    height: 60px;
-  }
-  
-  .shape-2 {
-    width: 90px;
-    height: 90px;
-  }
-  
-  .shape-3 {
-    width: 80px;
-    height: 80px;
-  }
+  .spider-hanger-scene { min-height: 350px; }
+  .spider-hanger { width: min(285px, 75vw); }
 }
 
 @media (max-width: 480px) {
@@ -291,23 +266,10 @@
     font-size: 0.9rem;
   }
   
-  .geometric-shapes {
-    width: 200px;
-    height: 200px;
-  }
-  
-  .shape-1 {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .shape-2 {
-    width: 70px;
-    height: 70px;
-  }
-  
-  .shape-3 {
-    width: 60px;
-    height: 60px;
-  }
+  .spider-hanger-scene { min-height: 310px; }
+  .spider-hanger { width: min(245px, 72vw); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spider-hanger, .spider-web-line { animation: none; }
 }

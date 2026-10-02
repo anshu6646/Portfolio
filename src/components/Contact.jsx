@@ -21,7 +21,7 @@ const Contact = () => {
     // Create mailto link
     const subject = `Message from ${formData.name}`
     const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
-    const mailtoLink = `mailto:aayansh.chaudhary03@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    const mailtoLink = `mailto:anshudhaker3238@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
     
     window.location.href = mailtoLink
     setFormData({ name: '', email: '', message: '' })
@@ -59,24 +59,24 @@ const Contact = () => {
             <div className="contact-details">
               <div className="contact-item">
                 <span className="contact-label">Email</span>
-                <a href="mailto:aayansh.chaudhary03@gmail.com" className="contact-value">
-                  aayansh.chaudhary03@gmail.com
+                <a href="mailto:anshudhaker3238@gmail.com" className="contact-value">
+                  anshudhaker3238@gmail.com
                 </a>
               </div>
               <div className="contact-item">
                 <span className="contact-label">Location</span>
-                <span className="contact-value">Meerut, Uttar Pradesh, India</span>
+                <span className="contact-value">IIIT Kota, Rajasthan, India</span>
               </div>
               <div className="contact-item">
                 <span className="contact-label">LinkedIn</span>
-                <a href="https://linkedin.com/in/aayansh03" target="_blank" rel="noopener noreferrer" className="contact-value">
-                  linkedin.com/in/aayansh03
+                <a href="https://www.linkedin.com/in/anshu-dhaker-15119630b" target="_blank" rel="noopener noreferrer" className="contact-value">
+                  linkedin.com/in/anshu-dhaker-15119630b
                 </a>
               </div>
               <div className="contact-item">
                 <span className="contact-label">GitHub</span>
-                <a href="https://github.com/a-ayansh" target="_blank" rel="noopener noreferrer" className="contact-value">
-                  github.com/a-ayansh
+                <a href="https://github.com/anshu6646" target="_blank" rel="noopener noreferrer" className="contact-value">
+                  github.com/anshu6646
                 </a>
               </div>
             </div>

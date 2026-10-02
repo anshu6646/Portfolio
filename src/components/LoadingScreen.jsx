@@ -6,13 +6,7 @@ const LoadingScreen = () => {
     <div className="loading-screen">
       <div className="loading-container">
         <div className="loading-text">
-          <span>A</span>
-          <span>A</span>
-          <span>Y</span>
-          <span>A</span>
-          <span>N</span>
-          <span>S</span>
-          <span>H</span>
+          <span>A</span><span>N</span><span>S</span><span>H</span><span>U</span>
         </div>
         <div className="loading-bar">
           <div className="loading-progress"></div>

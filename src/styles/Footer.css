@@ -41,9 +41,9 @@
 }
 
 .social-link:hover {
-  background-color: var(--primary-white);
-  color: var(--primary-black);
-  border-color: var(--primary-white);
+  background-color: var(--spider-red);
+  color: white;
+  border-color: var(--spider-red);
   transform: translateY(-2px);
 }
 

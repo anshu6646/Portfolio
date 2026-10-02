@@ -25,9 +25,9 @@
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 4rem;
-  max-width: 1000px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
@@ -37,7 +37,14 @@
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  background: linear-gradient(145deg, rgba(21,27,38,.95), rgba(13,17,25,.95));
+  border: 1px solid var(--dark-border);
+  border-left: 3px solid var(--spider-red);
+  padding: 1.6rem;
+  box-shadow: 8px 10px 25px rgba(0,0,0,.2);
 }
+.skill-category:nth-child(even) { border-left-color: var(--spider-blue); }
+.skill-category:hover { transform: translateY(-6px) rotateX(2deg); box-shadow: 0 18px 35px rgba(22,117,197,.14); }
 
 .skills.animate-in .skill-category:nth-child(1) {
   animation: slideInUp 0.8s ease forwards;
@@ -53,6 +60,14 @@
   animation: slideInUp 0.8s ease forwards;
   animation-delay: 0.6s;
 }
+.skills.animate-in .skill-category:nth-child(4) {
+  animation: slideInUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+}
+.skills.animate-in .skill-category:nth-child(5) {
+  animation: slideInUp 0.8s ease forwards;
+  animation-delay: 1s;
+}
 
 .category-header {
   display: flex;
@@ -60,7 +75,7 @@
   gap: 1rem;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid var(--primary-white);
+  border-bottom: 1px solid var(--dark-border);
   position: relative;
 }
 
@@ -71,15 +86,15 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-white), transparent);
+  background: linear-gradient(90deg, var(--spider-red), var(--spider-blue), transparent);
   animation: lineExpand 1.5s ease forwards;
   animation-delay: 0.8s;
 }
 
 .category-icon {
   font-size: 2rem;
-  background: var(--primary-white);
-  color: var(--primary-black);
+  background: linear-gradient(145deg, var(--spider-red), #92131a);
+  color: white;
   width: 60px;
   height: 60px;
   display: flex;
@@ -97,7 +112,7 @@
   left: -5px;
   right: -5px;
   bottom: -5px;
-  border: 2px solid var(--primary-white);
+  border: 1px solid rgba(91,153,205,.35);
   border-radius: 50%;
   opacity: 0;
   animation: ripple 2s ease-in-out infinite;
@@ -153,10 +168,10 @@
 
 .skill-item:hover {
   transform: translateY(-10px) scale(1.05);
-  border-color: var(--primary-white);
+  border-color: var(--spider-blue);
   box-shadow: 
-    0 20px 40px rgba(255, 255, 255, 0.1),
-    0 0 20px rgba(255, 255, 255, 0.2);
+    0 16px 32px rgba(0,0,0,.35),
+    0 0 18px rgba(22,117,197,.2);
 }
 
 .skill-name {
@@ -307,6 +322,7 @@
 }
 
 @media (max-width: 768px) {
+  .skills-container { grid-template-columns: 1fr; }
   .skills {
     padding: 4rem 0;
   }

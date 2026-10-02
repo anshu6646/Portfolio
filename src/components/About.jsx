@@ -22,15 +22,6 @@ const About = () => {
     return () => observer.disconnect()
   }, [])
 
-  const handleDownloadResume = () => {
-    const link = document.createElement('a')
-    link.href = '/Aayansh_Resume.pdf'
-    link.download = 'Aayansh_Chaudhary_Resume.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
-
   return (
     <section id="about" className="about" ref={sectionRef}>
       <div className="container">
@@ -38,9 +29,11 @@ const About = () => {
         <div className="about-content">
           <div className="about-text">
             <p className="about-intro">
-I'm currently pursuing a B.Tech from IIIT Kota, where I continue to sharpen my skills and explore new areas of computer science. As a DSA enthusiast, I enjoy diving into data structures and algorithms to solve challenging problems and improve my problem-solving abilities.            </p>
+Hey, I’m Anshu 👋 I’m a final-year Electronics and Communication Engineering student at IIIT Kota who enjoys turning ideas into things people can actually use. I started with an interest in programming and gradually got drawn toward web development, backend systems, and AI-powered applications.            </p>
             <p>
-When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or learning about the latest trends in web development. I believe in continuous learning and staying updated with the ever-evolving tech landscape.            </p>
+Most of my learning happens by building. From creating an AI-powered interview preparation platform to developing real-time chat and travel applications, I like understanding how things work behind the scenes and then putting them together into something useful.            </p>
+            <p>When I’m not building projects, you’ll probably find me solving DSA problems, exploring new technologies, or experimenting with ideas that I can turn into my next project.</p>
+            <p>I’m currently looking forward to opportunities where I can keep learning, build meaningful products, and grow as a software developer.</p>
   
           </div>
           <div className="about-visual">

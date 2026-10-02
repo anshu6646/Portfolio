@@ -7,35 +7,27 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Missing Alert System',
-      description: 'A comprehensive missing person reporting and case management platform designed to help communities locate missing individuals quickly and efficiently. Features secure authentication, real-time case tracking, and intelligent search capabilities.',
-      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS'],
-      github: 'https://github.com/a-ayansh/social-alert',
-      live: '#'
+      title: 'CareerPrep AI',
+      description: 'An AI-powered interview preparation platform that analyzes resumes and generates personalized job-match scores, interview questions, skill-gap analysis, and study plans using Gemini. Includes secure authentication and AI-powered resume generation.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Gemini'],
+      github: 'https://github.com/anshu6646/Job_preparation_ai',
+      live: 'https://careerprep-ai-frontend.onrender.com/'
     },
     {
       id: 2,
-      title: 'MMO Matchmaking Engine',
-      description: 'A real-time matchmaking engine for MMO games, offering sub-second latency for player pairing. Features intelligent queue expansion, adjustable K-factor system, and real-time communication.',
-      technologies: ["Node.js", "Socket.IO", "Redis", "RabbitMQ", "Docker"],
-      github: 'https://github.com/a-ayansh/mmo-engine',
-      live: '#'
+      title: 'Snappy',
+      description: 'A real-time MERN chat application for instant messaging through persistent WebSocket connections, with chat history stored in MongoDB.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Socket.IO', 'Docker'],
+      github: 'https://github.com/anshu6646/chat-app',
+      live: 'https://chat-app-4h6f.vercel.app/'
     },
     {
       id: 3,
-      title: 'Task Organizer',
-      description: 'A task and event management web app with secure authentication, priority sorting, and RESTful APIs. Built for seamless user experience using MERN stack.',
-      technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "bcrypt"],
-      github: 'https://github.com/a-ayansh/task-org',
-      live: '#'
-    },
-    {
-      id: 4,
-      title: 'Personal Portfolio Website',
-      description: 'Responsive portfolio website with smooth animations, dark theme, and modern design principles. Built with React and optimized for all devices.',
-      technologies: ['React', 'CSS3', 'JavaScript'],
-      github: 'https://github.com/a-ayansh/portfolio',
-      live: '#'
+      title: 'Wanderlust',
+      description: 'A full-stack travel listing platform to create, manage, and explore listings with images, reviews, category filtering, and interactive maps. Includes authentication, Cloudinary uploads, and location-based features.',
+      technologies: ['Node.js', 'Express', 'MongoDB', 'Cloudinary', 'Leaflet.js'],
+      github: 'https://github.com/anshu6646/wanderlust',
+      live: null
     }
   ]
 
@@ -76,6 +68,7 @@ const Projects = () => {
                 <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
                   <span>GitHub</span>
                 </a>
+                {project.live && <a href={project.live} target="_blank" rel="noopener noreferrer" className="project-link primary"><span>Live Demo ↗</span></a>}
               </div>
             </div>
           ))}
