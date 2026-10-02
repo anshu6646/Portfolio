@@ -1,42 +1,39 @@
-# 🚀 Aayansh's Portfolio
+# Anshu's Portfolio
 
-Modern dark-themed portfolio website built with React.js and Framer Motion.
+My personal portfolio website, built to showcase my projects, skills, and education. The site includes a Spider-Man-inspired illustration, responsive layouts, and a contact form.
 
-## ✨ Features
+## Built with
 
-- Dark theme with smooth animations
-- Responsive design
-- Resume download
-- Project showcase
-- Contact form
+- React
+- Vite
+- CSS
 
-## 🛠️ Tech Stack
-
-React.js - Framer Motion - CSS3
-
-## 🚀 Quick Setup
+## Run locally
 
 ```bash
-git clone https://github.com/Aayansh03/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/anshu6646/portfolio.git
+cd portfolio
 npm install
-npm install framer-motion react-intersection-observer react-scroll
-npm start
+npm run dev
 ```
 
-## 📝 Customization
+Open the local URL printed by Vite, usually `http://localhost:5173`.
 
-- Update personal info in components
-- Replace `src/assets/pfp.jpg` with your photo
-- Update resume link in Hero.js
-
-## 🚀 Deploy
+To create and preview a production build:
 
 ```bash
 npm run build
-# Upload build folder to hosting platform
+npm run preview
 ```
 
-**Author:** Aayansh [@Aayansh03](https://github.com/Aayansh03)
+## Featured projects
 
-⭐ Star if helpful!
+- **CareerPrep AI** — AI-powered interview and resume preparation platform. [Live demo](https://careerprep-ai-frontend.onrender.com/) · [Source](https://github.com/anshu6646/Job_preparation_ai)
+- **Snappy** — Real-time chat application built with the MERN stack and Socket.IO. [Live demo](https://chat-app-4h6f.vercel.app/) · [Source](https://github.com/anshu6646/chat-app)
+- **Wanderlust** — Travel listing platform with reviews, image uploads, and interactive maps. [Source](https://github.com/anshu6646/wanderlust)
+
+## Contact
+
+- Email: [anshudhaker3238@gmail.com](mailto:anshudhaker3238@gmail.com)
+- LinkedIn: [Anshu Dhaker](https://www.linkedin.com/in/anshu-dhaker-15119630b)
+- GitHub: [anshu6646](https://github.com/anshu6646)
